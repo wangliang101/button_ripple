@@ -1,0 +1,49 @@
+button{
+  display: block;
+  margin: 50px auto;
+  height: 60px;
+  width: 140px;
+  color: #fff;
+  background-color: #E95546;
+  font-size: 16px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple{
+  position: absolute;
+  border-radius: 50% 50%;
+  background: rgba(255, 255, 255, 0.4);
+
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 1;
+
+}
+
+.rippleEffect {
+  -webkit-animation: rippleDrop 1s linear;
+  animation: rippleDrop 1s linear;
+  /* background-color: #61dafb !important */
+}
+
+@keyframes rippleDrop{
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rippleDrop{
+  100% {
+    transform: scale(2);
+    -webkit-transform: sacle(2);
+    opacity: 0;
+  }
+}
